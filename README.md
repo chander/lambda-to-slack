@@ -1,4 +1,4 @@
-[![](https://img.shields.io/badge/Available-serverless%20app%20repository-blue.svg)](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:289559741701:applications~lambda-to-slack)
+[![](https://img.shields.io/badge/Available-serverless%20app%20repository-blue.svg)](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:289559741701:applications~macnoms-lambda-to-slack)
 
 # macnoms-lambda-to-slack
 

@@ -46,9 +46,9 @@ test:
 	pipenv run cfn-lint template.yml
 	pipenv run py.test --cov=$(SRC_DIR) --cov-fail-under=90 -vv test/unit
 
-compile: test
+compile:
 	pipenv lock --requirements > $(SRC_DIR)/requirements.txt
-	pipenv run sam build
+	pipenv run sam build --use-container
 
 build: compile
 

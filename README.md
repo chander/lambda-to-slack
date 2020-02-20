@@ -1,8 +1,10 @@
 [![](https://img.shields.io/badge/Available-serverless%20app%20repository-blue.svg)](https://serverlessrepo.aws.amazon.com/#/applications/arn:aws:serverlessrepo:us-east-1:289559741701:applications~lambda-to-slack)
 
-# lambda-to-slack
+# macnoms-lambda-to-slack
 
-This serverless app posts messages to Slack.
+This serverless app posts messages to Slack.  It uses a set of contains strings to determine which slack channel/webhook 
+should be used for the messages.  This is important because only a single subscriber is allowed for each cloudwatch
+log; so logging to more than a single slack channel with a single lambda-to-slack (traditional) lambda was not possible.
 
 ## App Architecture
 
@@ -32,6 +34,10 @@ To get a webhook URL for this application:
 
 1. `SlackUrl` (required) - Webhook URL for integration with Slack
 1. `LogLevel` (optional) - Log level for Lambda function logging, e.g., ERROR, INFO, DEBUG, etc. Default: INFO
+1. `SlackUrl1` (required) - Webhook URL for integration with Slack (if messages match ContainsString1)
+1. `ContainsString1` (required) - A string that, if present in the message, dictates that the message should be logged to SlackUrl2
+1. `SlackUrl2` (required) - Webhook URL for integration with Slack (if messages match ContainsString1)
+1. `ContainsString2` (required) - A string that, if present in the message, dictates that the message should be logged to SlackUrl2
 
 ## App Outputs
 

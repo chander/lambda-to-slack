@@ -19,4 +19,9 @@ def post_to_slack(event, context):
         raise InputError(event, "Input needs to be a json array")
 
     for message in event:
-        slack.post_message(config.SLACK_URL, message)
+        if config.CONTAINS_STRING1 in message:
+            slack.post_message(config.SLACK_URL1, message)
+        elif config.CONTAINS_STRING2 in message:
+            slack.post_message(config.SLACK_URL2, message)
+        else:
+            slack.post_message(config.SLACK_URL, message)

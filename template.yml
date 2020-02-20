@@ -3,7 +3,7 @@ Transform: AWS::Serverless-2016-10-31
 
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: lambda-to-slack
+    Name: macnoms-lambda-to-slack
     Description: Posts messages to a Slack channel.
     Author: Keeton Hodgson
     SpdxLicenseId: MIT
@@ -11,20 +11,31 @@ Metadata:
     LicenseUrl: ../../LICENSE
     ReadmeUrl: ../../README.md
     Labels: [serverless,slack,lambda]
-    HomePageUrl: https://github.com/keetonian/lambda-to-slack
+    HomePageUrl: https://github.com/chander/macnoms-lambda-to-slack
     # Update the semantic version and run sam publish to publish a new version of your app
-    SemanticVersion: 0.0.1
+    SemanticVersion: 0.0.2
     # best practice is to use git tags for each release and link to the version tag as your source code URL
-    SourceCodeUrl: https://github.com/keetonian/lambda-to-slack/tree/0.0.1
+    SourceCodeUrl: https://github.com/chander/macnoms-lambda-to-slack/tree/0.0.2
 
 Parameters:
   LogLevel:
     Type: String
     Description: Log level for Lambda function logging, e.g., ERROR, INFO, DEBUG, etc
     Default: INFO
-  SlackUrl:
-    Description: Webhook URL for integration with Slack
+  SlackUrl1:
+    Description: Webhook URL for integration with Slack (using ContainsString1)
     Type: String
+  ContainsString1:
+    Description: A String that must appear in the message in order for SlackUrl1 to be used.
+  SlackUrl2:
+    Description: Webhook URL for integration with Slack (using ContainsString2)
+    Type: String
+  ContainsString2:
+      Description: A String that must appear in the message in order for SlackUrl2 to be used.
+  SlackUrl:
+    Description: Webhook URL for integration with Slack (for messages not matched yet)
+    Type: String
+
 
 Globals:
   Function:

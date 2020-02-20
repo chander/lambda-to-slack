@@ -3,19 +3,19 @@ Transform: AWS::Serverless-2016-10-31
 
 Metadata:
   AWS::ServerlessRepo::Application:
-    Name: macnoms-lambda-to-slack
-    Description: Posts messages to a Slack channel.
-    Author: Keeton Hodgson
+    Name: lambda-to-slack-multi
+    Description: Posts messages to multiple Slack channels based on matching strings.
+    Author: Chander Ganesan
     SpdxLicenseId: MIT
     # paths are relative to .aws-sam/build directory
     LicenseUrl: LICENSE
     ReadmeUrl: README.md
     Labels: [serverless,slack,lambda]
-    HomePageUrl: https://github.com/chander/macnoms-lambda-to-slack
+    HomePageUrl: https://github.com/chander/lambda-to-slack-multi
     # Update the semantic version and run sam publish to publish a new version of your app
     SemanticVersion: 0.0.5
     # best practice is to use git tags for each release and link to the version tag as your source code URL
-    SourceCodeUrl: https://github.com/chander/macnoms-lambda-to-slack/tree/0.0.5
+    SourceCodeUrl: https://github.com/chander/lambda-to-slack-multi/tree/0.0.5
 
 Parameters:
   LogLevel:

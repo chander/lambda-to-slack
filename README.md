@@ -2,9 +2,12 @@
 
 # macnoms-lambda-to-slack
 
-This serverless app posts messages to Slack.  It uses a set of contains strings to determine which slack channel/webhook 
-should be used for the messages.  This is important because only a single subscriber is allowed for each cloudwatch
-log; so logging to more than a single slack channel with a single lambda-to-slack (traditional) lambda was not possible.
+This serverless app posts messages to Slack.  It uses a set of contains strings to 
+determine which slack channel/webhook should be used for the messages.  
+
+This is important because only a single subscriber is allowed for each cloudwatch
+log; so logging to more than a single slack channel with a single lambda-to-slack 
+(traditional) lambda was not possible.
 
 ## App Architecture
 
@@ -13,7 +16,7 @@ log; so logging to more than a single slack channel with a single lambda-to-slac
 ## Installation Instructions
 
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you do not already have one and login
-1. Go to the app's page on the [Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:289559741701:applications~lambda-to-slack) and click "Deploy"
+1. Go to the app's page on the [Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-west-2:444108974876:applications~lambda-to-slack-multi) and click "Deploy"
 1. Provide the required app parameters (see parameter details below) and click "Deploy"
 
 ## Using this Application

@@ -34,10 +34,46 @@ To get a webhook URL for this application:
 
 1. `SlackUrl` (required) - Webhook URL for integration with Slack
 1. `LogLevel` (optional) - Log level for Lambda function logging, e.g., ERROR, INFO, DEBUG, etc. Default: INFO
-1. `SlackUrl1` (required) - Webhook URL for integration with Slack (if messages match ContainsString1)
-1. `ContainsString1` (required) - A string that, if present in the message, dictates that the message should be logged to SlackUrl2
-1. `SlackUrl2` (required) - Webhook URL for integration with Slack (if messages match ContainsString1)
-1. `ContainsString2` (required) - A string that, if present in the message, dictates that the message should be logged to SlackUrl2
+1. `SlackUrl1` (optional) - Webhook URL for integration with Slack (if messages match ContainsString1)
+1. `ContainsString1` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl1
+1. `SlackUrl2` (optional) - Webhook URL for integration with Slack (if messages match ContainsString2)
+1. `ContainsString2` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl2
+1. `SlackUrl3` (optional) - Webhook URL for integration with Slack (if messages match ContainsString3)
+1. `ContainsString3` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl3
+1. `SlackUrl4` (optional) - Webhook URL for integration with Slack (if messages match ContainsString4)
+1. `ContainsString4` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl4
+1. `SlackUrl5` (optional) - Webhook URL for integration with Slack (if messages match ContainsString5)
+1. `ContainsString5` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl5
+1. `SlackUrl6` (optional) - Webhook URL for integration with Slack (if messages match ContainsString6)
+1. `ContainsString6` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl6
+1. `SlackUrl7` (optional) - Webhook URL for integration with Slack (if messages match ContainsString7)
+1. `ContainsString7` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl7
+1. `SlackUrl8` (optional) - Webhook URL for integration with Slack (if messages match ContainsString8)
+1. `ContainsString8` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl8
+1. `SlackUrl9` (optional) - Webhook URL for integration with Slack (if messages match ContainsString9)
+1. `ContainsString9` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl9
+1. `SlackUrl10` (optional) - Webhook URL for integration with Slack (if messages match ContainsString10)
+1. `ContainsString10` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl10
+1. `SlackUrl11` (optional) - Webhook URL for integration with Slack (if messages match ContainsString11)
+1. `ContainsString11` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl11
+1. `SlackUrl13` (optional) - Webhook URL for integration with Slack (if messages match ContainsString12)
+1. `ContainsString12` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl12
+1. `SlackUrl13` (optional) - Webhook URL for integration with Slack (if messages match ContainsString13)
+1. `ContainsString13` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl13
+1. `SlackUrl14` (optional) - Webhook URL for integration with Slack (if messages match ContainsString14)
+1. `ContainsString14` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl14
+1. `SlackUrl15` (optional) - Webhook URL for integration with Slack (if messages match ContainsString15)
+1. `ContainsString15` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl15
+1. `SlackUrl16` (optional) - Webhook URL for integration with Slack (if messages match ContainsString16)
+1. `ContainsString16` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl216
+1. `SlackUrl17` (optional) - Webhook URL for integration with Slack (if messages match ContainsString17)
+1. `ContainsString17` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl17
+1. `SlackUrl18` (optional) - Webhook URL for integration with Slack (if messages match ContainsString18)
+1. `ContainsString18` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl18
+1. `SlackUrl19` (optional) - Webhook URL for integration with Slack (if messages match ContainsString19)
+1. `ContainsString19` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl19
+1. `SlackUrl20` (optional) - Webhook URL for integration with Slack (if messages match ContainsString20)
+1. `ContainsString20` (optional) - A string that, if present in the message, dictates that the message should be logged to SlackUrl20
 
 ## App Outputs
 

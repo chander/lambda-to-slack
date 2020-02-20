@@ -13,7 +13,7 @@ Metadata:
     Labels: [serverless,slack,lambda]
     HomePageUrl: https://github.com/chander/macnoms-lambda-to-slack
     # Update the semantic version and run sam publish to publish a new version of your app
-    SemanticVersion: 0.0.2
+    SemanticVersion: 0.0.3
     # best practice is to use git tags for each release and link to the version tag as your source code URL
     SourceCodeUrl: https://github.com/chander/macnoms-lambda-to-slack/tree/0.0.2
 
@@ -32,6 +32,96 @@ Parameters:
     Type: String
   ContainsString2:
       Description: A String that must appear in the message in order for SlackUrl2 to be used.
+  SlackUrl3:
+    Description: Webhook URL for integration with Slack (using ContainsString3)
+    Type: String
+  ContainsString3:
+    Description: A String that must appear in the message in order for SlackUrl3 to be used.
+  SlackUrl4:
+    Description: Webhook URL for integration with Slack (using ContainsString4)
+    Type: String
+  ContainsString4:
+    Description: A String that must appear in the message in order for SlackUrl4 to be used.
+  SlackUrl5:
+    Description: Webhook URL for integration with Slack (using ContainsString5)
+    Type: String
+  ContainsString5:
+    Description: A String that must appear in the message in order for SlackUrl5 to be used.
+  SlackUrl6:
+    Description: Webhook URL for integration with Slack (using ContainsString6)
+    Type: String
+  ContainsString6:
+    Description: A String that must appear in the message in order for SlackUrl6 to be used.
+  SlackUrl7:
+    Description: Webhook URL for integration with Slack (using ContainsString7)
+    Type: String
+  ContainsString1:
+    Description: A String that must appear in the message in order for SlackUrl7 to be used.
+  SlackUrl8:
+    Description: Webhook URL for integration with Slack (using ContainsString8)
+    Type: String
+  ContainsString8:
+      Description: A String that must appear in the message in order for SlackUrl8 to be used.
+  SlackUrl9:
+    Description: Webhook URL for integration with Slack (using ContainsString9)
+    Type: String
+  ContainsString9:
+    Description: A String that must appear in the message in order for SlackUrl9 to be used.
+  SlackUrl10:
+    Description: Webhook URL for integration with Slack (using ContainsString10)
+    Type: String
+  ContainsString10:
+    Description: A String that must appear in the message in order for SlackUrl10 to be used.
+  SlackUrl11:
+    Description: Webhook URL for integration with Slack (using ContainsString11)
+    Type: String
+  ContainsString11:
+    Description: A String that must appear in the message in order for SlackUrl11 to be used.
+  SlackUrl12:
+    Description: Webhook URL for integration with Slack (using ContainsString12)
+    Type: String
+  ContainsString12:
+    Description: A String that must appear in the message in order for SlackUrl12 to be used.
+  SlackUrl13:
+    Description: Webhook URL for integration with Slack (using ContainsString13)
+    Type: String
+  ContainsString13:
+      Description: A String that must appear in the message in order for SlackUrl13 to be used.
+  SlackUrl14:
+    Description: Webhook URL for integration with Slack (using ContainsString14)
+    Type: String
+  ContainsString14:
+    Description: A String that must appear in the message in order for SlackUrl14 to be used.
+  SlackUrl15:
+    Description: Webhook URL for integration with Slack (using ContainsString15)
+    Type: String
+  ContainsString15:
+    Description: A String that must appear in the message in order for SlackUrl15 to be used.
+  SlackUrl16:
+    Description: Webhook URL for integration with Slack (using ContainsString16)
+    Type: String
+  ContainsString16:
+    Description: A String that must appear in the message in order for SlackUrl16 to be used.
+  SlackUrl17:
+    Description: Webhook URL for integration with Slack (using ContainsString17)
+    Type: String
+  ContainsString17:
+    Description: A String that must appear in the message in order for SlackUrl17 to be used.
+  SlackUrl18:
+    Description: Webhook URL for integration with Slack (using ContainsString18)
+    Type: String
+  ContainsString18:
+    Description: A String that must appear in the message in order for SlackUrl18 to be used.
+  SlackUrl19:
+    Description: Webhook URL for integration with Slack (using ContainsString19)
+    Type: String
+  ContainsString19:
+    Description: A String that must appear in the message in order for SlackUrl19 to be used.
+  SlackUrl20:
+    Description: Webhook URL for integration with Slack (using ContainsString20)
+    Type: String
+  ContainsString20:
+    Description: A String that must appear in the message in order for SlackUrl20 to be used.
   SlackUrl:
     Description: Webhook URL for integration with Slack (for messages not matched yet)
     Type: String

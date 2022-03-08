@@ -4,7 +4,7 @@ Transform: AWS::Serverless-2016-10-31
 Metadata:
   AWS::ServerlessRepo::Application:
     Name: lambda-to-slack-multi
-    Description: Posts messages to multiple Slack channels based on matching strings.
+    Description: Examine a log payload and post to a designated slack channel based on a matched string.  Allows one lambda to be used to send messages to multiple slack channels (i.e. messages containing ERROR go to #errors, DEBUG to #debug, etc.)
     Author: Chander Ganesan
     SpdxLicenseId: MIT
     # paths are relative to .aws-sam/build directory
@@ -13,9 +13,9 @@ Metadata:
     Labels: [serverless,slack,lambda]
     HomePageUrl: https://github.com/chander/lambda-to-slack-multi
     # Update the semantic version and run sam publish to publish a new version of your app
-    SemanticVersion: 0.0.5
+    SemanticVersion: 0.0.6
     # best practice is to use git tags for each release and link to the version tag as your source code URL
-    SourceCodeUrl: https://github.com/chander/lambda-to-slack-multi/tree/0.0.5
+    SourceCodeUrl: https://github.com/chander/lambda-to-slack-multi/tree/0.0.6
 
 Parameters:
   LogLevel:
@@ -23,8 +23,9 @@ Parameters:
     Description: Log level for Lambda function logging, e.g., ERROR, INFO, DEBUG, etc
     Default: INFO
   SlackUrl:
-    Description: Webhook URL for integration with Slack (for messages not matched yet)
+    Description: Webhook URL for integration with Slack (for messages not matched by any other rules, leave empty to discard unmatched messages)
     Type: String
+    Default: ''
   SlackUrl01:
     Default: ''
     Description: Webhook URL for integration with Slack (using ContainsString01)

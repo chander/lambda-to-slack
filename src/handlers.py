@@ -23,4 +23,5 @@ def post_to_slack(event, context):
             if contains_string in message:
                 slack.post_message(slack_url, message)
                 return
-    slack.post_message(config.SLACK_URL, message)
+    if config.SLACK_URL:
+        slack.post_message(config.SLACK_URL, message)
